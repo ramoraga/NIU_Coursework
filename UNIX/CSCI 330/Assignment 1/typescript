@@ -1,0 +1,18 @@
+Script started on 2020-01-22 10:08:06-06:00 [TERM="xterm-256color" TTY="/dev/pts/12" COLUMNS="80" LINES="24"]
+]0;z1864815@hopper: ~[01;32mz1864815@hopper[00m:[01;34m~[00m$ whoami
+z1864815
+]0;z1864815@hopper: ~[01;32mz1864815@hopper[00m:[01;34m~[00m$ ls
+[0m[01;34mbin[0m  [01;36mcourse_html[0m  [01;34mcsci241[0m  [01;36mpublic_html[0m  typescript
+]0;z1864815@hopper: ~[01;32mz1864815@hopper[00m:[01;34m~[00m$ echo Hello, Dave.
+Hello, Dave.
+]0;z1864815@hopper: ~[01;32mz1864815@hopper[00m:[01;34m~[00m$ I am sorry,[K[K[K[K[K[K[K[K[K[K[Kecho I am sorry, I cannot do that, Dave > hal
+]0;z1864815@hopper: ~[01;32mz1864815@hopper[00m:[01;34m~[00m$ ls
+[0m[01;34mbin[0m  [01;36mcourse_html[0m  [01;34mcsci241[0m  hal  [01;36mpublic_html[0m  typescript
+]0;z1864815@hopper: ~[01;32mz1864815@hopper[00m:[01;34m~[00m$ cat hal
+I am sorry, I cannot do that, Dave
+]0;z1864815@hopper: ~[01;32mz1864815@hopper[00m:[01;34m~[00m$ rm hal
+]0;z1864815@hopper: ~[01;32mz1864815@hopper[00m:[01;34m~[00m$ ls
+[0m[01;34mbin[0m  [01;36mcourse_html[0m  [01;34mcsci241[0m  [01;36mpublic_html[0m  typescript
+]0;z1864815@hopper: ~[01;32mz1864815@hopper[00m:[01;34m~[00m$ exit
+
+Script done on 2020-01-22 10:09:11-06:00 [COMMAND_EXIT_CODE="0"]
