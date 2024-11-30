@@ -1,0 +1,24 @@
+Reinaldo Moraga (z1864815)
+
+1.2 	The result of running the SELECT statement displays "Empty Set". This is because
+	the transaction had not been committed and so nothing was changed in the database.
+
+1.5	 pK | data	The result of the SELECT statement is the table and the data
+	-----------	that was just inserted.
+	  1 | dataA
+	  2 | dataB
+	  3 | dataC
+	  4 | dataD
+	  5 | dataE
+
+2.4	The result of the SELECT statement displays an ERROR because table Spring hasn't
+	been created and doesn't exist.
+
+2.5	The result of the SELECT statement is the same table from before from question 1.5.
+	That's because since the ROLLBACK statement was called, the database went back to
+	how it was before the START TRANSACTION statement was called, sort of like a 
+	backup.
+
+3.	What happened was the program wouldn't respond and an ERROR was displayed. This is
+	because a dealock occured because there was an attempt to change the same value.
+

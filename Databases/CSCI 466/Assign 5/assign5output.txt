@@ -1,0 +1,77 @@
+MariaDB [z1864815]> \. assign5.sql
+Query OK, 0 rows affected (0.192 sec)
+
+Query OK, 0 rows affected (0.175 sec)
+
+Query OK, 5 rows affected (0.025 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
++-------+-------------+------+-----+---------+----------------+
+| Field | Type        | Null | Key | Default | Extra          |
++-------+-------------+------+-----+---------+----------------+
+| ID    | int(11)     | NO   | PRI | NULL    | auto_increment |
+| BREED | varchar(20) | NO   |     | NULL    |                |
+| NAME  | varchar(10) | NO   |     | NULL    |                |
++-------+-------------+------+-----+---------+----------------+
+3 rows in set (0.040 sec)
+
++----+-----------+--------+
+| ID | BREED     | NAME   |
++----+-----------+--------+
+|  1 | Corgi     | Cookie |
+|  2 | Beagle    | Peanut |
+|  3 | Huskie    | Victor |
+|  4 | Chow Chow | Simba  |
+|  5 | Shiba Inu | Ollie  |
++----+-----------+--------+
+5 rows in set (0.035 sec)
+
+Query OK, 0 rows affected (0.184 sec)
+
+Query OK, 8 rows affected (0.075 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
++------------+---------+------+-----+---------+----------------+
+| Field      | Type    | Null | Key | Default | Extra          |
++------------+---------+------+-----+---------+----------------+
+| VISIT_ID   | int(11) | NO   | PRI | NULL    | auto_increment |
+| DOG_ID     | int(11) | NO   | MUL | NULL    |                |
+| VISIT_DATE | date    | NO   |     | NULL    |                |
++------------+---------+------+-----+---------+----------------+
+3 rows in set (0.001 sec)
+
++----------+--------+------------+
+| VISIT_ID | DOG_ID | VISIT_DATE |
++----------+--------+------------+
+|        1 |      5 | 2001-01-25 |
+|        2 |      3 | 2019-08-26 |
+|        3 |      1 | 2019-08-27 |
+|        4 |      5 | 2019-09-18 |
+|        5 |      4 | 2019-10-31 |
+|        6 |      2 | 2019-12-31 |
+|        7 |      4 | 2020-01-01 |
+|        8 |      5 | 2020-10-07 |
++----------+--------+------------+
+8 rows in set (0.001 sec)
+
+Query OK, 0 rows affected (0.358 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 5 rows affected (0.025 sec)
+Rows matched: 5  Changed: 5  Warnings: 0
+
++----------+--------+------------+------------+
+| VISIT_ID | DOG_ID | VISIT_DATE | VISIT_TIME |
++----------+--------+------------+------------+
+|        1 |      5 | 2001-01-25 | NULL       |
+|        2 |      3 | 2019-08-26 | 18:07:39   |
+|        3 |      1 | 2019-08-27 | 18:07:39   |
+|        4 |      5 | 2019-09-18 | 18:07:39   |
+|        5 |      4 | 2019-10-31 | 18:07:39   |
+|        6 |      2 | 2019-12-31 | 18:07:39   |
+|        7 |      4 | 2020-01-01 | NULL       |
+|        8 |      5 | 2020-10-07 | NULL       |
++----------+--------+------------+------------+
+8 rows in set (0.001 sec)
+
+MariaDB [z1864815]> \t
